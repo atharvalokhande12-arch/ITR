@@ -2,33 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Different Ways To Apply CSS .</title>
-    <!-- Style Tag Attribute for Styling. i.e Internal -->
-    <!-- <style> 
-        h1{
-            color: goldenrod;
-        }
-    </style> -->
+    <title>CSS Styling Ways</title>
 
-    <!--External File for Styling -->
-    <!--Link tag to link the stylesheet css file with index.html file -->
-    <!-- href-->
-    <link rel ="stylesheet" href="style.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+        .internal-box {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 2px solid orange;
+        }
+    </style>
 </head>
 <body>
-    <!--Inline Attribute of Styling. -->
-    <h1 style="color: purple;">Heading</h1> 
-    <h1>Heading</h1>
-    
 
-    <!-- Priorities Of CSS :-->
-    <!--
-        Priorites Arranged From Most to Least below :
-        1. Inline CSS
-        2. Internal/Embedded (with Style tag) CSS
-        3. External CSS
-    -->
+    <h1>CSS Styling Ways</h1>
+
+    <!-- Inline CSS -->
+    <h3 style="color: red;">This is Inline CSS Example</h3>
+
+    <!-- Internal CSS -->
+    <div class="internal-box">
+        <h2>This is Internal CSS Example</h2>
+        <p>Styled using internal CSS inside head tag.</p>
+    </div>
+
+    <!-- External CSS -->
+    <div class="external-box">
+        <h2>External CSS Example</h2>
+        <p>This is styled using external CSS file.</p>
+    </div>
+
 </body>
 </html>
-
